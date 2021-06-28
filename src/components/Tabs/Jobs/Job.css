@@ -1,0 +1,630 @@
+#job-section {
+    width: 80%;
+    padding: 5vh 10% 5vh 10%;
+    min-height: 85vh;
+    background-color: #F8F8F8;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#job-section #job {
+    width: 33%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    border-radius: 5px;
+
+    background-color: #ffffff;
+    box-shadow: 0 1px 10px rgba( 0, 0, 0, 0.23 );
+}
+
+#job-section #job #job-image-container {
+    width: 100%;
+    height: 30vh;
+
+    background-color: #F8F8F8;
+    background-position: center;
+    background-size: cover;
+
+    position: relative;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#job-section #job #job-image-container #edit-image {
+    background-color: #ffffff;
+    border-radius: 5px;
+
+    padding: 0.7vh 1.3vw;
+
+    color: #068CDD;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1vw;
+    line-height: normal;
+
+    position: absolute;
+    right: 1vw;
+    bottom: 2vh;
+
+    cursor: pointer;
+}
+
+#job-section #job #job-content {
+    width: 100%;
+    height: 100%;
+
+    box-sizing: border-box;
+
+    padding: 2vh 1vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#job-section #job h1 {
+    color: #0B323C;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 600;
+
+}
+
+#job-section #job .job-icon-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#job-section #job .job-icon {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+
+    margin: 3% 0;
+}
+
+#job-section #job .job-icon h3 {
+    margin-left: 0.3vw;
+    color: #969694;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.2vw;
+    line-height: normal;
+}
+
+#job-section #job #salary-icon {
+    margin-left: 1vw;
+    margin-right: auto;
+}
+
+#job-section #job #job-experience {
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1vw;
+    font-weight: 600;
+
+    border-radius: 5px;
+    padding: 0.7vh 0;
+
+    width: 55%;
+
+    text-align: center;
+}
+
+#job-section #job .job-experience-green {
+    background-color: #34C191;
+}
+
+#job-section #job .job-experience-red {
+    background-color: #F95F62;
+}
+
+
+#job-section #job .job-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 1vh 0 2vh 0;
+}
+
+#job-section #job #job-employment-time {
+    color: #068CDD;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1vw;
+    font-weight: 600;
+
+    padding: 0.7vh;
+
+    width: 55%;
+    border: 1px solid #068CDD;
+    border-radius: 5px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+}
+
+#job-section #job #job-employment-contract {
+    color: #068CDD;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1vw;
+    font-weight: 600;
+
+    padding: 0.7vh;
+
+    width: 43%;
+    border: 1px solid #068CDD;
+    border-radius: 5px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+}
+
+#job-section #job #job-starting-date {
+    color: #808080;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 1vw;
+}
+
+#job-section #job #job-starting-date b {
+    font-weight: 600;
+}
+
+#job-section #job #job-description {
+    color: #808080;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 1vw;
+    line-height: 1.3vw;
+    margin: 3vh 0;
+    
+    white-space: pre-line;
+}
+
+#job-section #job #job-students-accepted {
+    color: #808080;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 1vw;
+
+    margin-bottom: 1vh;
+}
+
+#job-section #job #job-students-accepted b {
+    font-weight: 600;
+}
+
+#job-section #job #job-type {
+    color: #808080;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 1vw;
+    margin-bottom: 2vh;
+}
+
+#job-section #job #job-type b {
+    font-weight: 600;
+}
+
+#job-section #job #job-created {
+    color: #808080;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 1vw;
+
+    align-self: flex-end;
+}
+
+#job-section #job #job-application-button {
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+
+    border-radius: 5px;
+    background-color: #068CDD;
+
+    padding: 1vh 0;
+    margin: 1vh 0;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    position: relative;
+
+    cursor: pointer;
+}
+
+#job-section #job #job-application-button h3 {
+    color: #ffffff;
+
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.3vw;
+    line-height: normal;
+
+    padding: 0 1vw;
+    border-right: 1px solid #ffffff;
+
+    justify-self: flex-start;
+}
+
+#job-section #job #job-application-button h4 {
+    color: #ffffff;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3vw;
+    line-height: normal;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX( -50% );
+}
+
+#job-section #job #job-hired-button {
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+
+    text-align: center;
+
+    padding: 0.5vh 0;
+
+    border-radius: 5px;
+    border: 1px solid #808080;
+
+    color: #808080;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 1vw;
+    line-height: normal;
+    
+    cursor: pointer;
+}
+
+#job-section #job h5 {
+    color: #627275;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 1vw;
+    line-height: normal;
+
+    margin: 1vh 0;
+
+    width: 100%;
+    text-align: center;
+    
+    cursor: pointer;
+}
+
+#job-section .input-container {
+    width: 100%;
+
+    position: relative;
+
+    margin: 0.8vw 0;
+}
+
+#job-section .input-container .input-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    color: #3E4756;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1vw;
+    line-height: normal;
+
+    transition: 0.2s;
+    transform-origin: 0% 50%;
+
+    pointer-events: none;
+}
+
+#job-section .input-container .input-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+
+    transition: 0.3s;
+    transform-origin: 0% 50%;
+    transform: scaleX( 0 );
+
+    background-color: #068CDD;
+}
+
+#job-section .input-error {
+    margin-top: 0;
+    margin-bottom: 0.5vh;
+}
+
+#job-section .input-container textarea {
+    width: 100%;
+    height: fit-content;
+    min-height: 15vh;
+
+    box-sizing: border-box;
+    padding: 1vh 0.5vw;
+
+    outline: 0;
+    resize: none;
+    
+    border-radius: 5px;
+    border: 1px solid #808080;
+
+    color: #3E4756;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1vw;
+    line-height: normal;
+    white-space: pre-line;
+}
+
+#job-section .input-container textarea + span {
+    left: 0.5vw !important;
+    top: 1vh !important;
+}
+
+#job-section .input-container textarea:not(:placeholder-shown) + span {
+    color: #068CDD;
+    transform: translateY( calc( -1.1vw - 1.2vh ) ) translateX( -0.5vw ) scale(.75)
+}
+
+#job-section .input-container textarea:focus + span {
+    color: #068CDD;
+    transform: translateY( calc( -1.1vw - 1.2vh ) ) translateX( -0.5vw ) scale(.75)
+}
+
+#job-section #right-column {
+    width: 33%;
+    margin-left: 2vw;
+}
+
+#job-section #app-response-container {
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+
+    padding: 1vh 1vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    border-radius: 5px;
+
+    background-color: #ffffff;
+    box-shadow: 0 1px 10px rgba( 0, 0, 0, 0.23 );
+
+    margin-bottom: 1vh;
+}
+
+#job-section #app-response-container #title {
+    color: #0B323C;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1vw;
+    font-weight: 700;
+    line-height: normal;
+
+    width: 100%;
+    padding-bottom: 1vh;
+    border-bottom: 2px solid #0B323C;
+
+    margin-bottom: 2vh;
+}
+
+#job-section #app-response-container #save-response {
+    align-self: flex-end;
+    width: fit-content;
+    padding: 0.5vh 1vw;
+
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1vw;
+    line-height: normal;
+
+    background-color: #068CDD;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+
+    text-align: center;
+
+    cursor: pointer;
+}
+
+#job-section #app-response-container #response-loader {
+    align-self: flex-end;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    #job-section {
+        width: 90%;
+        padding: 5vh 5% 0 5%;
+    }
+
+    #job-section #job {
+        width: 100%;
+    }
+    
+    #job-section #job #job-image-container a {
+        padding: 1vh 3vw;
+        font-size: 4vw;
+
+        left: 3vw;
+        top: 2vh;
+    }
+
+    #job-section #job #job-image-container #edit-image {
+        padding: 0.7vh 3vw;
+
+        font-size: 4vw;
+
+        right: 3vw;
+        bottom: 2vh;
+    }
+    
+    #job-section #job #job-content {
+        padding: 2vh 3vw;
+    }
+    
+    #job-section #job h1 {
+        font-size: 6vw;
+    
+    }
+    
+    #job-section #job .job-icon-row {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    
+    #job-section #job .job-icon {
+        margin: 5% 2% 5% 0;
+    }
+    
+    #job-section #job .job-icon h3 {
+        font-size: 4vw;
+        margin-left: 1vw;
+    }
+    
+    #job-section #job #job-experience {
+        font-size: 4vw;
+        padding: 1vh 0;
+    
+        width: 100%;
+    }
+    
+    #job-section #job .job-row {
+        margin: 1vh 0 2vh 0;
+
+        flex-direction: column;
+    }
+    
+    #job-section #job #job-employment-time {
+        font-size: 4vw;
+    
+        padding: 1vh;
+    
+        width: 100%;
+    }
+    
+    #job-section #job #job-employment-contract {
+        font-size: 4vw;
+    
+        padding: 1vh;
+    
+        width: 100%;
+
+        margin-top: 1vh;
+    }
+    
+    #job-section #job #job-starting-date {
+        font-size: 4vw;
+    }
+
+    #job-section #job #job-description {
+        font-size: 4vw;
+    }
+
+    #job-section #job #job-students-accepted {
+        font-size: 4vw;
+    }
+    
+    #job-section #job #job-type {
+        font-size: 4vw;
+        margin-bottom: 0;
+    }
+    
+    #job-section #job #job-created {
+        font-size: 4vw;
+        margin: 3vh 0 1vh 0;
+    }
+    
+    #job-section #job #job-application-button h3 {
+        font-size: 4vw;
+
+        margin-left: 1vw;
+        padding: 0 3vw;
+    }
+    
+    #job-section #job #job-application-button h4 {
+        font-size: 4vw;
+    }
+    
+    #job-section #job #job-hired-button {
+        padding: 1vh 0;
+    
+        font-size: 3.5vw;
+    }
+    
+    #job-section #job h5 {
+        font-size: 3.5vw;
+    }
+
+    #job-section .input-container {
+        margin: 3vw 0;
+    }
+    
+    #job-section .input-container .input-label {
+        font-size: 4vw;
+    }
+    
+    #job-section .input-container textarea {
+        min-height: 15vh;
+    
+        padding: 1vh 2vw;
+        font-size: 4vw;
+    }
+    
+    #job-section .input-container textarea + span {
+        left: 2vw !important;
+        top: 1vh !important;
+    }
+    
+    #job-section .input-container textarea:not(:placeholder-shown) + span {
+        transform: translateY( calc( -4vw - 1.2vh ) ) translateX( -2vw ) scale(.75)
+    }
+    
+    #job-section .input-container textarea:focus + span {
+        transform: translateY( calc( -4vw - 1.2vh ) ) translateX( -2vw ) scale(.75)
+    }
+
+    #job-section #right-column {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    #job-section #app-response-container {
+        width: 100%;
+
+        padding: 2vh 3vw;
+        margin-top: 2vh;
+    }
+    
+    #job-section #app-response-container #title {
+        font-size: 5vw;
+    }
+    
+    #job-section #app-response-container #save-response {
+        padding: 0.5vh 3vw;
+    
+        font-size: 4vw;
+    }
+
+}

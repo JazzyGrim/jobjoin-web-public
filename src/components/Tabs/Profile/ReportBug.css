@@ -1,0 +1,203 @@
+#bug-profile-section {
+    width: 80%;
+    padding: 5vh 10% 0 10%;
+    min-height: 85vh;
+    background-color: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#bug-profile-section #bug-profile {
+    width: 30%;
+    height: fit-content;
+    box-sizing: border-box;
+
+    padding: 1vh 1.5vw;
+    margin: 5vh 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    border-radius: 5px;
+
+    background-color: #ffffff;
+    box-shadow: 0 1px 10px rgba( 0, 0, 0, 0.23 );
+
+    position: relative;
+}
+
+#bug-profile-section #bug-profile #bug-profile-image {
+    position: absolute;
+    top: -5vw;
+    left: 50%;
+
+    width: 10vw;
+    height: 10vw;
+
+    background-color: #333;
+    background-position: center;
+    background-size: cover;
+
+    border: 10px solid #F8F8F8;
+    border-radius: 100%;
+
+    transform: translateX( -50% );
+}
+
+#bug-profile-section #bug-profile .input-container {
+    width: 100%;
+
+    position: relative;
+
+    margin: calc( 5vw + 3vh ) 0 0.8vw 0;
+}
+
+#bug-profile-section #bug-profile .input-container .input-label {
+    position: absolute;
+    top: 1vh;
+    left: 0.5vw;
+
+    color: #3E4756;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1vw;
+    line-height: normal;
+
+    transition: 0.2s;
+    transform-origin: 0% 50%;
+    
+    pointer-events: none;
+}
+
+#bug-profile-section #bug-profile .input-container textarea {
+    width: 100%;
+    height: 15vh;
+
+    box-sizing: border-box;
+    padding: 1vh 0.5vw;
+
+    outline: 0;
+    resize: none;
+    
+    border-radius: 5px;
+    border: 1px solid #808080;
+
+    color: #3E4756;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1vw;
+    line-height: normal;
+    white-space: pre-line;
+}
+
+#bug-profile-section #bug-profile .input-container textarea:not(:placeholder-shown) + span {
+    color: #068CDD;
+    transform: translateY( calc( -1vw - 1.2vh ) ) translateX( -0.5vw ) scale(.75)
+}
+
+#bug-profile-section #bug-profile .input-container textarea:focus + span {
+    color: #068CDD;
+    transform: translateY( calc( -1vw - 1.2vh ) ) translateX( -0.5vw ) scale(.75)
+}
+
+#bug-profile-section #bug-profile #bug-profile-row {
+    width: 100%;
+
+    margin: 1vh 0 3vh 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bug-profile-section #bug-profile #bug-profile-row #cancel-button {
+    width: 48%;
+    text-align: center;
+
+    padding: 0.5vh 0;
+
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1vw;
+    line-height: normal;
+
+    border-radius: 5px;
+    background-color: #068CDD;
+    
+    cursor: pointer;
+}
+
+#bug-profile-section #bug-profile #bug-profile-row #save-button {
+    width: 48%;
+    text-align: center;
+
+    padding: 0.5vh 0;
+
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1vw;
+    line-height: normal;
+
+    border-radius: 5px;
+    background-color: #00D6A1;
+
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #bug-profile-section {
+        width: 90%;
+        padding: calc( 17.5vw + 1vh ) 5% 0 5%;
+        justify-content: flex-start;
+    }
+    
+    #bug-profile-section #bug-profile {
+        width: 100%;
+    
+        padding: 1vh 3vw;
+        margin: 1vh 0;
+    }
+    
+    #bug-profile-section #bug-profile #bug-profile-image {
+        top: -17.5vw;
+    
+        width: 35vw;
+        height: 35vw;
+    }
+    
+    #bug-profile-section #bug-profile .input-container {
+        margin: calc( 17.5vw + 4vh ) 0 3vw 0;
+    }
+    
+    #bug-profile-section #bug-profile .input-container .input-label {
+        left: 2vw;
+
+        font-size: 4vw;
+    }
+    
+    #bug-profile-section #bug-profile .input-container textarea {
+        padding: 1vh 2vw;
+
+        font-size: 4vw;
+    }
+    
+    #bug-profile-section #bug-profile .input-container textarea:not(:placeholder-shown) + span {
+        transform: translateY( calc( -4vw - 1.2vh ) ) translateX( -0.5vw ) scale(.75)
+    }
+    
+    #bug-profile-section #bug-profile .input-container textarea:focus + span {
+        transform: translateY( calc( -4vw - 1.2vh ) ) translateX( -0.5vw ) scale(.75)
+    }
+    
+    #bug-profile-section #bug-profile #bug-profile-row #cancel-button {
+        font-size: 4vw;
+    }
+    
+    #bug-profile-section #bug-profile #bug-profile-row #save-button {
+        font-size: 4vw;
+    }
+
+}

@@ -1,0 +1,120 @@
+#page-error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba( 0, 0, 0, 0.23 );
+    cursor: default;
+}
+
+#page-error h3 {
+    color: #ffffff;
+    font-size: 2vw;
+    font-family: 'Raleway', sans-serif;
+    background-color: #FF4A49;
+    border-radius: 8px;
+    padding: 1vh 1vw;
+}
+
+#page-error h4 {
+    color: #4F4F4F;
+    font-size: 1.5vw;
+    line-height: normal;
+    font-family: 'Raleway', sans-serif;
+    padding: 0 1vw;
+}
+
+.top-message {
+    width: 100%;
+    height: fit-content;
+    background-color: #FF4A49;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1vh 0;
+}
+
+.top-success {
+    background-color: #34C191;
+}
+
+.top-message h1 {
+    color: #ffffff;
+    font-size: 1.5vw;
+    line-height: normal;
+    font-family: 'Raleway', sans-serif;
+    
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    transform: translateX( -50% );
+    text-align: center;
+}
+
+.top-message .top-close {
+    width: 2vw;
+    height: 2vw;
+    opacity: 1;
+    position: relative;
+
+    cursor: pointer;
+    transition: 0.3s;
+
+    margin-right: 5vw;
+}
+
+.top-message .top-close:hover {
+    transform: scale( 0.7 );
+}
+
+.top-message .top-close:before, .top-message .top-close:after {
+    position: absolute;
+    left: 1vw;
+    content: ' ';
+    height: 2vw;
+    width: 2px;
+    background-color: #ffffff;
+}
+
+.top-message .top-close:before {
+    transform: rotate(45deg);
+}
+
+.top-message .top-close:after {
+    transform: rotate(-45deg);
+}
+
+@media only screen and (max-width: 600px) {
+
+    .top-message {
+        padding: 2vh 0;
+    }
+
+    .top-message h1 {
+        font-size: 5vw;
+    }
+
+    .top-message .top-close {
+        width: 5vw;
+        height: 5vw;
+    }
+    
+    .top-message .top-close:before, .top-message .top-close:after {
+        left: 2.5vw;
+        height: 5vw;
+        width: 2px;
+    }
+
+    #page-error h3 {
+        font-size: 6vw;
+        padding: 1vh 4vw;
+    }
+    
+    #page-error h4 {
+        font-size: 5vw;
+        padding: 0 1vw;
+    }
+
+}

@@ -1,0 +1,264 @@
+#recruiter-nav {
+    width: 100%;
+    padding: 0 10%;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #fff;
+
+    z-index: 10;
+    min-width: 0;
+}
+
+#recruiter-nav img {
+    height: 4vw;
+
+    z-index: 30;
+
+    cursor: default;
+}
+
+#recruiter-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+#recruiter-nav #main-list {
+    margin-right: auto;
+    margin-left: 5%;
+}
+
+#recruiter-nav ul li {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#recruiter-nav ul li a {
+    white-space: nowrap;
+    margin: 0 1vw;
+
+    color: #3E4756;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1vw;
+    font-weight: 600;
+    min-width: 0;
+
+    cursor: pointer;
+}
+
+#recruiter-nav ul li #active {
+    color: #068CDD;
+}
+
+#recruiter-nav #token-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50px;
+    border: 0.1vw solid #068CDD;
+
+    padding: 0.5vh 1vw;
+
+    cursor: pointer;
+}
+
+#recruiter-nav #token-container .token {
+    width: 1.2vw;
+    height: 1.2vw;
+}
+
+#recruiter-nav #token-container h3 {
+    color: #3E4756;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1vw;
+    font-weight: bold;
+    line-height: normal;
+
+    margin-right: 0.5vw;
+}
+
+#recruiter-nav #mobile-hamburger {
+    display: none;
+}
+
+#recruiter-nav #mobile-menu {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #recruiter-nav {
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
+
+    #recruiter-nav img {
+        height: 15vw;
+    }
+
+    #recruiter-nav ul {
+        display: none;
+    }
+
+    #recruiter-nav #mobile-hamburger {
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        width: 6vw;
+        height: 2.7vh;
+        z-index: 30;
+    }
+
+    #recruiter-nav #mobile-hamburger #box-1,#recruiter-nav #mobile-hamburger #box-2, #recruiter-nav #mobile-hamburger #box-3, #recruiter-nav #mobile-hamburger #box-4 {
+        width: 6vw;
+        height: 0.5vh;
+        background-color: #333;
+        transition: 0.4s;
+        border-radius: 5px;
+    }
+    
+    #recruiter-nav #mobile-hamburger #box-1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    #recruiter-nav #mobile-hamburger #box-2 {
+        position: absolute;
+        top: 1.1vh;
+        left: 0;
+    }
+
+    #recruiter-nav #mobile-hamburger #box-3 {
+        position: absolute;
+        top: 1.1vh;
+        left: 0;
+    }
+
+    #recruiter-nav #mobile-hamburger #box-4 {
+        position: absolute;
+        top: 2.2vh;
+        left: 0;
+    }
+
+    #recruiter-nav .open #box-1 {
+        opacity: 0;
+        -webkit-transform: scale( 0.5 ) translateX( 0 );
+        transform: scale( 0.5 ) translateX( 0 );
+    }
+
+    #recruiter-nav .open #box-2 {
+        -webkit-transform: rotate( -45deg );
+        transform: rotate( -45deg );
+    }
+
+    #recruiter-nav .open #box-3 {
+        -webkit-transform: rotate( 45deg );
+        transform: rotate( 45deg );
+    }
+
+    #recruiter-nav .open #box-4 {
+        opacity: 0;
+        -webkit-transform: scale( 0.5 ) translateX( 0 );
+        transform: scale( 0.5 ) translateX( 0 );
+    }
+
+    #recruiter-nav #mobile-menu {
+        width: 100vw;
+        height: 80vh;
+        padding: 10vh 0;
+
+        position: fixed;
+        left: -100vw;
+        top: 0;
+
+        z-index: 20;
+
+        background-color: #fff;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-start;
+
+        transition: 0.4s cubic-bezier( 0.77, 0.2, 0.05, 1.0 );
+    }
+
+    #recruiter-nav .mobile-menu-open {
+        left: 0 !important;
+    }
+
+    #recruiter-nav #mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        margin-top: auto;
+        margin-left: 10vw;
+    }
+
+    #recruiter-nav #mobile-menu #main-list {
+        margin: 0 0 0 10vw;
+    }
+    
+    #recruiter-nav #mobile-menu ul li {
+        width: 100%;
+        text-align: start;
+        box-sizing: border-box;
+        margin: 3vh 0;
+    }
+    
+    #recruiter-nav #mobile-menu ul li a {
+        margin: 3vh 0;
+    
+        color: #3E4756;
+        font-size: 5vw;
+    
+        cursor: pointer;
+    }
+
+    #recruiter-nav ul li #active-mobile {
+        color: #068CDD !important;
+    }
+
+    #recruiter-nav #token-row {
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #recruiter-nav #token-container {
+        border: 0.5vw solid #068CDD;
+    
+        padding: 0.5vh 4vw;
+
+        margin-right: 10vw;
+    }
+    
+    #recruiter-nav #token-container .token {
+        width: 4.2vw;
+        height: 4.2vw;
+    }
+    
+    #recruiter-nav #token-container h3 {
+        color: #3E4756;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 5vw;
+        font-weight: bold;
+        line-height: normal;
+    
+        margin-right: 2vw;
+    }
+
+}

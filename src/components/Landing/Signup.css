@@ -1,0 +1,259 @@
+#signup-screen {
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+
+    background-color: #f7fcfe;
+}
+
+#signup-screen #content {
+    width: 55%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 0;
+}
+
+#signup-screen #content h1 {
+    color: #FF9695;
+    font-size: 1.7vw;
+    font-family: 'Raleway', sans-serif;
+
+    padding-bottom: 0.8vh;
+}
+
+#signup-screen #content span {
+    display: block;
+    width: 15%;
+    height: 0.2vh;
+    background-color: #FF9695;
+    border-radius: 10px;
+}
+
+#signup-screen #facebook-button {
+    width: 80%;
+    height: fit-content;
+    padding: 2%;
+
+    margin: 2vh 0 1vh 0;
+
+    background-color: #ffffff;
+    outline: none;
+    border: 1px solid #A8A8A8;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+#signup-screen #facebook-button img {
+    width: 7%;
+    opacity: 67%;
+}
+
+#signup-screen #facebook-button p {
+    color: #4F4F4F;
+    font-size: 1vw;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 1vw;
+}
+
+#signup-screen #or {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#signup-screen #or span {
+    width: 30%;
+    background-color: #4F4F4F;
+}
+
+#signup-screen #or p {
+    color: #4F4F4F;
+    font-size: 1vw;
+    font-family: 'Raleway', sans-serif;
+    padding: 0 0.5vw;
+}
+
+#signup-screen .input-error {
+    width: 80%;
+    color: #ff4a49;
+    font-size: 1vw;
+    line-height: 1.3vw;
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    margin-top: 0.5vh;
+}
+
+#signup-screen .input-container {
+    width: 76%;
+    height: fit-content;
+    padding: 2%;
+    
+    margin-top: 1.4vh;
+
+    background-color: #ffffff;
+    border: 1px solid #A8A8A8;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#signup-screen .input-container input {
+    outline: 0;
+    border: 0;
+
+    color: #4F4F4F;
+    font-size: 1vw;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 1vw;
+    width: 50vw;
+}
+
+#signup-screen #content #continue-button {
+    width: 80%;
+
+    color: #FF9695;
+    font-size: 1vw;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+
+    margin-top: 1.4vh;
+    padding: 1vh 0;
+
+    border: 1px solid #FF9695;
+    border-radius: 5px;
+
+    text-align: center;
+    cursor: pointer;
+
+}
+
+#signup-screen #content #register-button {
+    width: 80%;
+
+    color: #FF9695;
+    font-size: 1vw;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+
+    margin-top: 1.4vh;
+    padding: 1vh 0;
+
+    border: 1px solid #FF9695;
+    border-radius: 5px;
+
+    text-align: center;
+    cursor: pointer;
+
+}
+
+#signup-screen #content #return-button {
+    width: 80%;
+
+    color: #808080;
+    font-size: 1vw;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+
+    margin-top: 1.4vh;
+    padding: 1vh 0;
+
+    border: 1px solid #808080;
+    border-radius: 5px;
+
+    text-align: center;
+    cursor: pointer;
+
+    opacity: 0.8;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    #signup-screen #content {
+        width: 90%;
+        height: fit-content;
+        padding: 2vh 0;
+    }
+    
+    #signup-screen #content h1 {
+        font-size: 6vw;
+    }
+    
+    #signup-screen #content span {
+        width: 20%;
+    }
+    
+    #signup-screen #facebook-button {
+        width: 100%;
+        padding: 2%;
+    
+        margin: 2vh 0 1vh 0;
+    }
+    
+    #signup-screen #facebook-button img {
+        width: 10%;
+        opacity: 67%;
+    }
+    
+    #signup-screen #facebook-button p {
+        font-size: 3vw;
+        padding-left: 2vw;
+    }
+    
+    #signup-screen #or {
+        width: 70%;
+    }
+    
+    #signup-screen #or p {
+        font-size: 3vw;
+        padding: 0 0.5vw;
+    }
+
+    #signup-screen .input-error {
+        width: 100%;
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+    
+    #signup-screen .input-container {
+        width: 96%;
+        padding: 2%;
+        
+        margin-top: 1.4vh;
+    }
+    
+    #signup-screen .input-container input {
+        font-size: 3vw;
+        padding-left: 2vw;
+        width: 100%;
+    }
+    
+    #signup-screen #content #continue-button, #signup-screen #content #register-button, #signup-screen #content #return-button {
+        width: 100%;
+    
+        font-size: 4vw;
+    
+        margin-top: 1.4vh;
+        padding: 1vh 0;
+    }
+    
+    #signup-screen #forgot-password {
+        font-size: 3.3vw;
+        margin-top: 1vh;
+        margin-left: 0%;
+        margin-bottom: 7vh;
+    }
+
+}

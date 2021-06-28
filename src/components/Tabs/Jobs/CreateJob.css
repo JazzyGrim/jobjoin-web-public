@@ -1,0 +1,511 @@
+.create-job-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: '-50%';
+    transform: translate( -50%, -50% );
+    border: 0;
+    background-color: #ffffff;
+    
+    border-radius: 10px;
+
+    max-width: 30vw;
+
+    box-sizing: border-box;
+    padding: 1vh 1vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+}
+
+.create-job-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba( 0, 0, 0, 0.5 );
+    z-index: 50;
+}
+
+.create-job-modal h2 {
+    color: #0B323C;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1vw;
+    font-weight: 700;
+    line-height: normal;
+
+    width: 100%;
+    text-align: center;
+
+    margin-bottom: 1vh;
+}
+
+.create-job-modal h4 {
+    color: #0B323C;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1vw;
+    line-height: normal;
+
+    width: 100%;
+    text-align: center;
+    
+    margin-bottom: 2vh;
+}
+
+.create-job-modal #modal-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-job-modal #cancel-button {
+    color: #808080;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1vw;
+    line-height: normal;
+
+    padding: 0.5vh 1vw;
+    border-radius: 5px;
+    border: 1px solid #808080;
+
+    cursor: pointer;
+}
+
+.create-job-modal #confirm-button {
+    margin-left: 1vw;
+
+    color: #068CDD;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1vw;
+    line-height: normal;
+
+    padding: 0.5vh 1vw;
+    border-radius: 5px;
+    border: 1px solid #068CDD;
+
+    cursor: pointer;
+}
+
+#create-job-section {
+    width: 80%;
+    padding: 5vh 10% 5vh 10%;
+    min-height: 85vh;
+    background-color: #F8F8F8;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#create-job-section #create-job {
+    width: 33%;
+    height: fit-content;
+    box-sizing: border-box;
+
+    padding: 1vh 1vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    border-radius: 5px;
+
+    background-color: #ffffff;
+    box-shadow: 0 1px 10px rgba( 0, 0, 0, 0.23 );
+}
+
+#create-job-section #right-column {
+    width: 33%;
+    margin-left: 2vw;
+}
+
+#create-job-section #loader {
+    margin: 0 auto 1vh auto;
+}
+
+#create-job-section #title {
+    color: #0B323C;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1vw;
+    font-weight: 700;
+    line-height: normal;
+
+    width: 100%;
+    padding-bottom: 1vh;
+    border-bottom: 2px solid #0B323C;
+
+    margin-bottom: 2vh;
+}
+
+#create-job-section .input-container {
+    width: 100%;
+
+    position: relative;
+
+    margin: 0.8vw 0;
+}
+
+#create-job-section .input-container .input-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    color: #3E4756;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1vw;
+    line-height: normal;
+
+    transition: 0.2s;
+    transform-origin: 0% 50%;
+
+    pointer-events: none;
+}
+
+#create-job-section .input-container .input-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+
+    transition: 0.3s;
+    transform-origin: 0% 50%;
+    transform: scaleX( 0 );
+
+    background-color: #068CDD;
+}
+
+#create-job-section .input-container input {
+    width: 100%;
+
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid #333;
+
+    color: #3E4756;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1vw;
+    line-height: normal;
+}
+
+#create-job-section .input-container input:not(:placeholder-shown) + span {
+    color: #068CDD;
+    transform: translateY(-1.1vw) scale(.75)
+}
+
+#create-job-section .input-container input:focus + span {
+    color: #068CDD;
+    transform: translateY(-1.1vw) scale(.75)
+}
+
+#create-job-section .input-container input:focus +span + .input-border {
+    transform: scaleX( 1 );
+}
+
+#create-job-section #address-container {
+    margin-top: 2vh;
+}
+
+#create-job-section .input-error {
+    margin-bottom: 0.5vh;
+}
+
+#create-job-section .input-container textarea {
+    width: 100%;
+    height: fit-content;
+    min-height: 15vh;
+
+    box-sizing: border-box;
+    padding: 1vh 0.5vw;
+
+    outline: 0;
+    resize: none;
+    
+    border-radius: 5px;
+    border: 1px solid #808080;
+
+    color: #3E4756;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1vw;
+    line-height: normal;
+    white-space: pre-line;
+}
+
+#create-job-section .input-container textarea + span {
+    left: 0.5vw !important;
+    top: 1vh !important;
+}
+
+#create-job-section .input-container textarea:not(:placeholder-shown) + span {
+    color: #068CDD;
+    transform: translateY( calc( -1.1vw - 1.2vh ) ) translateX( -0.5vw ) scale(.75)
+}
+
+#create-job-section .input-container textarea:focus + span {
+    color: #068CDD;
+    transform: translateY( calc( -1.1vw - 1.2vh ) ) translateX( -0.5vw ) scale(.75)
+}
+
+#create-job-section .input-container #select-label {
+    color: #3E4756;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1vw;
+    line-height: normal;
+}
+
+#create-job-section .input-container select {
+    outline: 0;
+    box-sizing: border-box;
+
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #808080;
+
+    color: #3E4756;
+    font-size: 1vw;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    padding: 0.5vh 0.5vw;
+    margin-top: 1vh;
+    width: 100%;
+}
+
+#create-job-section .row {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 1vh;
+}
+
+#create-job-section .row .input-container {
+    width: 40%;
+}
+
+#create-job-section #create-job .row #starting-date {
+    width: 50%;
+}
+
+#create-job-section #create-job #slider-container {
+    width: 45%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#create-job-section #create-job #slider-container label {
+    color: #3E4756;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.975vw;
+    line-height: normal;
+
+    margin-bottom: 0.5vh;
+}
+
+#create-job-section #create-job #status-slider {
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px rgba( 0, 0, 0, 0.23 );
+    position: relative;
+
+    border: 1px solid #068CDD;
+}
+
+#create-job-section #create-job #status-slider #slider {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #068CDD;
+    transition: all 300ms ease-in-out;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 0;
+}
+
+#create-job-section #create-job #status-slider #side {
+    width: 50%;
+    height: 100%;
+    padding: 0.5vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 2;
+
+    cursor: pointer;
+}
+
+#create-job-section #create-job #status-slider #side h3 {
+    color: #068CDD;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9vw;
+    line-height: normal;
+
+    transition: color 300ms ease-in-out;
+}
+
+#create-job-section #create-job #status-slider #side #active {
+    color: #ffffff;
+}
+
+#create-job-section #create-job #create-job-button {
+    width: 100%;
+
+    padding: 1vh 0;
+
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1vw;
+    line-height: normal;
+
+    background-color: #068CDD;
+    border-radius: 5px;
+
+    text-align: center;
+
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #create-job-section {
+        width: 90%;
+        min-height: 86vh;
+        padding: 2vh 5% 2vh 5%;
+    }
+    
+    #create-job-section #create-job {
+        width: 100%;
+
+        padding: 2vh 3vw;
+    }
+
+    #create-job-section #right-column {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #create-job-section #title {
+        font-size: 5vw;
+    }
+    
+    #create-job-section .input-container {
+        margin: 3vw 0;
+    }
+    
+    #create-job-section .input-container .input-label {
+        font-size: 4vw;
+    }
+    
+    #create-job-section .input-container input {
+        font-size: 4vw;
+    }
+    
+    #create-job-section .input-container input:not(:placeholder-shown) + span {
+        transform: translateY(-4vw) scale(.75)
+    }
+    
+    #create-job-section .input-container input:focus + span {
+        transform: translateY(-4vw) scale(.75)
+    }
+    
+    #create-job-section #create-job #address-container {
+        margin-top: 2vh;
+    }
+    
+    #create-job-section .input-container textarea {
+        min-height: 15vh;
+    
+        padding: 1vh 2vw;
+        font-size: 4vw;
+    }
+    
+    #create-job-section .input-container textarea + span {
+        left: 2vw !important;
+        top: 1vh !important;
+    }
+    
+    #create-job-section .input-container textarea:not(:placeholder-shown) + span {
+        transform: translateY( calc( -4vw - 1.2vh ) ) translateX( -2vw ) scale(.75)
+    }
+    
+    #create-job-section .input-container textarea:focus + span {
+        transform: translateY( calc( -4vw - 1.2vh ) ) translateX( -2vw ) scale(.75)
+    }
+    
+    #create-job-section .input-container #select-label {
+        font-size: 4vw;
+    }
+    
+    #create-job-section .input-container select {
+        padding: 1vh 2vw;
+        font-size: 4vw;
+    }
+
+    #create-job-section .row {
+        margin-bottom: 1vh;
+    }
+    
+    #create-job-section #create-job #slider-container {
+        width: 45%;
+    }
+    
+    #create-job-section #create-job #slider-container label {
+        font-size: 3vw;
+    }
+    
+    #create-job-section #create-job #status-slider #side h3 {
+        font-size: 3vw;
+    }
+    
+    #create-job-section #create-job #create-job-button {
+        font-size: 4vw;
+    }
+
+    .create-job-modal {
+        width: 95vw;
+        max-width: 95vw;
+        padding: 1vh 3vw;
+    }
+    
+    .create-job-modal h2 {
+        font-size: 5vw;
+    }
+    
+    .create-job-modal h4 {
+        font-size: 4vw;
+    }
+
+    .create-job-modal #cancel-button {
+        font-size: 5vw;
+    
+        padding: 0.5vh 3vw;
+    }
+    
+    .create-job-modal #confirm-button {
+        margin-left: 5vw;
+        font-size: 5vw;
+    
+        padding: 0.5vh 3vw;
+    }
+
+}

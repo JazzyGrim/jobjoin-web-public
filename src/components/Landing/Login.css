@@ -1,0 +1,220 @@
+#login-screen {
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+
+    background-color: #f7fcfe;
+}
+
+#login-screen #content {
+    width: 55%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 0;
+}
+
+#login-screen #content h1 {
+    color: #FF9695;
+    font-size: 1.7vw;
+    font-family: 'Raleway', sans-serif;
+
+    padding-bottom: 0.8vh;
+
+}
+
+#login-screen #content span {
+    display: block;
+    width: 15%;
+    height: 0.2vh;
+    background-color: #FF9695;
+    border-radius: 10px;
+}
+
+#login-screen #facebook-button {
+    width: 80%;
+    height: fit-content;
+    padding: 2%;
+
+    margin: 2vh 0 1vh 0;
+
+    background-color: #ffffff;
+    outline: none;
+    border: 1px solid #A8A8A8;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+#login-screen #facebook-button img {
+    width: 7%;
+    opacity: 67%;
+}
+
+#login-screen #facebook-button p {
+    color: #4F4F4F;
+    font-size: 1vw;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 1vw;
+}
+
+#login-screen #or {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-screen #or span {
+    width: 30%;
+    background-color: #4F4F4F;
+}
+
+#login-screen #or p {
+    color: #4F4F4F;
+    font-size: 1vw;
+    font-family: 'Raleway', sans-serif;
+    padding: 0 0.5vw;
+}
+
+#login-screen .input-container {
+    width: 76%;
+    height: fit-content;
+    padding: 2%;
+    
+    margin-top: 1.4vh;
+
+    background-color: #ffffff;
+    border: 1px solid #A8A8A8;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#login-screen .input-container input {
+    outline: 0;
+    border: 0;
+
+    color: #4F4F4F;
+    font-size: 1vw;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 1vw;
+    width: 100%;
+}
+
+#login-screen #content h3 {
+    width: 80%;
+
+    color: #FF9695;
+    font-size: 1vw;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+
+    margin-top: 1.4vh;
+    padding: 1vh 0;
+
+    border: 1px solid #FF9695;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+    text-align: center;
+    cursor: pointer;
+}
+
+#login-screen #forgot-password {
+    color: #939393;
+    font-size: 0.8vw;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 1vh;
+    margin-left: 10%;
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #login-screen {
+        flex-direction: column;
+    }
+    
+    #login-screen #content {
+        width: 90%;
+        height: fit-content;
+        padding: 2vh 0;
+    }
+    
+    #login-screen #content h1 {
+        font-size: 6vw;
+        margin-top: 7vh;
+    }
+    
+    #login-screen #content span {
+        width: 20%;
+    }
+    
+    #login-screen #facebook-button {
+        width: 100%;
+        padding: 2%;
+    
+        margin: 2vh 0 1vh 0;
+    }
+    
+    #login-screen #facebook-button img {
+        width: 10%;
+        opacity: 67%;
+    }
+    
+    #login-screen #facebook-button p {
+        font-size: 3vw;
+        padding-left: 2vw;
+    }
+    
+    #login-screen #or {
+        width: 70%;
+    }
+    
+    #login-screen #or p {
+        font-size: 3vw;
+        padding: 0 0.5vw;
+    }
+    
+    #login-screen .input-container {
+        width: 96%;
+        padding: 2%;
+        
+        margin-top: 1.4vh;
+    }
+    
+    #login-screen .input-container input {
+        font-size: 3vw;
+        padding-left: 2vw;
+        width: 100%;
+    }
+    
+    #login-screen #content h3 {
+        width: 100%;
+    
+        font-size: 4vw;
+    
+        margin-top: 1.4vh;
+        padding: 1vh 0;
+    }
+    
+    #login-screen #forgot-password {
+        font-size: 3.3vw;
+        margin-top: 1vh;
+        margin-left: 0%;
+        margin-bottom: 7vh;
+    }
+
+}

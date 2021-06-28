@@ -1,0 +1,451 @@
+#create-quiz {
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+
+    padding: 1vh 1vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    border-radius: 5px;
+
+    background-color: #ffffff;
+    box-shadow: 0 1px 10px rgba( 0, 0, 0, 0.23 );
+}
+
+#create-quiz #title {
+    color: #0B323C;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1vw;
+    font-weight: 700;
+    line-height: normal;
+
+    width: 100%;
+    padding-bottom: 1vh;
+    border-bottom: 2px solid #0B323C;
+
+    margin-bottom: 2vh;
+}
+
+#create-quiz #quiz-required {
+    margin: 0;
+}
+
+#create-quiz #quiz-description {
+    color: #0B323C;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9vw;
+    line-height: 1.2vw;
+
+    width: 100%;
+
+    margin-bottom: 2vh;
+}
+
+#create-quiz .big-button {
+    width: fit-content;
+    padding: 0.5vh 1vw;
+
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1vw;
+    line-height: normal;
+
+    background-color: #068CDD;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+
+    text-align: center;
+
+    cursor: pointer;
+}
+
+#create-quiz .empty-button {
+    background-color: #ffffff;
+    color: #068CDD;
+    border: 1px solid #068CDD;
+}
+
+#create-quiz .question-row svg {
+    margin-left: 1vw;
+    cursor: pointer;
+}
+
+#create-quiz .question {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1vh 1vw;
+    border: 1px solid #E4E4E4;
+    border-radius: 5px;
+
+    margin: 1vh 0;
+}
+
+#create-quiz .question .input-error {
+    margin-bottom: 1vh;
+}
+
+#create-quiz .question #time-limit {
+    margin-top: 3vh;
+}
+
+#create-quiz .question .radio {
+    width: 0.7vw;
+    height: 0.7vw;
+    border: 0.3vw solid #E4E4E4;
+    border-radius: 1vw;
+    background-color: #E4E4E4;
+
+    margin-right: 0.5vw;
+    
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    cursor: pointer;
+}
+
+#create-quiz .question .active-radio {
+    background-color: #068CDD;
+}
+
+#create-quiz .question .checkbox {
+    width: 0.7vw;
+    height: 0.7vw;
+    border: 0.3vw solid #E4E4E4;
+    border-radius: 2px;
+    background-color: #E4E4E4;
+
+    margin-right: 0.5vw;
+    
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    cursor: pointer;
+}
+
+#create-quiz .question .active-checkbox {
+    background-color: #068CDD;
+}
+
+#create-quiz .question .big-button {
+    width: fit-content;
+    padding: 0.5vh 1vw;
+
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1vw;
+    line-height: normal;
+
+    background-color: #068CDD;
+    border-radius: 5px;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    margin-bottom: 3vh;
+}
+
+#create-quiz .question-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#create-quiz .button-row {
+    width: 100%;
+    padding: 1vh 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#create-quiz .button-row svg {
+    cursor: pointer;
+}
+
+#create-quiz .button-row #question-counter {
+    color: #0B323C;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 1.1vw;
+    line-height: normal;
+}
+
+#create-quiz .input-container {
+    width: 100%;
+
+    position: relative;
+
+    margin: 0.8vw 0;
+}
+
+#create-quiz .input-container .input-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    color: #3E4756;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1vw;
+    line-height: normal;
+
+    transition: 0.2s;
+    transform-origin: 0% 50%;
+
+    pointer-events: none;
+}
+
+#create-quiz .input-container .input-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+
+    transition: 0.3s;
+    transform-origin: 0% 50%;
+    transform: scaleX( 0 );
+
+    background-color: #068CDD;
+}
+
+#create-quiz .input-container input {
+    width: 100%;
+
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid #333;
+
+    color: #3E4756;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1vw;
+    line-height: normal;
+}
+
+#create-quiz .input-container input:not(:placeholder-shown) + span {
+    color: #068CDD;
+    transform: translateY(-1.1vw) scale(.75)
+}
+
+#create-quiz .input-container input:focus + span {
+    color: #068CDD;
+    transform: translateY(-1.1vw) scale(.75)
+}
+
+#create-quiz .input-container input:focus +span + .input-border {
+    transform: scaleX( 1 );
+}
+
+#create-quiz #address-container {
+    margin-top: 2vh;
+}
+
+#create-quiz .input-error {
+    margin-bottom: 0.5vh;
+}
+
+#create-quiz .input-container #select-label {
+    color: #3E4756;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1vw;
+    line-height: normal;
+}
+
+#create-quiz .input-container select {
+    outline: 0;
+    box-sizing: border-box;
+
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #808080;
+
+    color: #3E4756;
+    font-size: 1vw;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    padding: 0.5vh 0.5vw;
+    margin-top: 1vh;
+    width: 100%;
+}
+
+#create-quiz b {
+    font-weight: bold;
+}
+
+#create-quiz #question-type {
+    color: #3E4756;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1vw;
+    line-height: normal;
+    font-weight: bold;
+    margin: 0 0 1vh 0;
+}
+
+#create-quiz #quiz-required-text {
+    color: #3E4756;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1vw;
+    line-height: normal;
+}
+
+#create-quiz .answer-text {
+    width: 100%;
+    color: #3E4756;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1vw;
+    line-height: normal;
+    margin: 0.5vh 0;
+}
+
+#create-quiz #correct-points-text {
+    width: 100%;
+    color: #3E4756;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1vw;
+    line-height: normal;
+    margin: 1vh 0;
+}
+
+#create-quiz #time-limit-text {
+    width: 100%;
+    color: #3E4756;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1vw;
+    line-height: normal;
+    margin: 0.5vh 0;
+}
+
+#create-quiz .gray-button {
+    background-color: #808080;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #create-quiz {
+        width: 100%;
+
+        padding: 2vh 3vw;
+        margin-top: 2vh;
+    }
+    
+    #create-quiz #title {
+        font-size: 5vw;
+    }
+
+    #create-quiz #quiz-description {
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+    
+    #create-quiz .big-button {
+        padding: 0.5vh 3vw;
+    
+        font-size: 4vw;
+    }
+    
+    #create-quiz .save-button {
+        padding: 0.5vh 3vw;
+    
+        font-size: 4vw;
+    }
+
+    #create-quiz .question-row svg {
+        margin-left: 1vw;
+        cursor: pointer;
+    }
+    
+    #create-quiz .question {
+        padding: 1vh 3vw;
+    }
+    
+    #create-quiz .question .radio {
+        width: 2.5vw;
+        height: 2.5vw;
+        border: 1vw solid #E4E4E4;
+        border-radius: 2.5vw;
+    
+        margin-right: 2vw;
+    }
+    
+    #create-quiz .question .checkbox {
+        width: 2.5vw;
+        height: 2.5vw;
+        border: 1vw solid #E4E4E4;
+    
+        margin-right: 2vw;
+    }
+    
+    #create-quiz .question .big-button {
+        padding: 0.5vh 3vw;
+    
+        font-size: 4vw;
+    
+        margin-bottom: 3vh;
+    }
+
+    #create-quiz .button-row #question-counter {
+        font-size: 5vw;
+    }
+
+    #create-quiz .input-container {
+        margin: 3vw 0;
+    }
+    
+    #create-quiz .input-container .input-label {
+        font-size: 4vw;
+    }
+    
+    #create-quiz .input-container input {
+        font-size: 4vw;
+    }
+    
+    #create-quiz .input-container input:not(:placeholder-shown) + span {
+        transform: translateY(-4vw) scale(.75)
+    }
+    
+    #create-quiz .input-container input:focus + span {
+        transform: translateY(-4vw) scale(.75)
+    }
+    
+    #create-quiz .input-container #select-label {
+        font-size: 4vw;
+    }
+    
+    #create-quiz .input-container select {
+        padding: 1vh 2vw;
+        font-size: 4vw;
+    }
+
+    #create-quiz b {
+        font-weight: bold;
+    }
+    
+    #create-quiz #question-type {
+        font-size: 4vw;
+    }
+    
+    #create-quiz #quiz-required-text {
+        font-size: 4vw;
+    }
+    
+    #create-quiz .answer-text {
+        font-size: 4vw;
+    }
+    
+    #create-quiz #correct-points-text {
+        font-size: 4vw;
+    }
+    
+    #create-quiz #time-limit-text {
+        font-size: 4vw;
+    }
+
+}

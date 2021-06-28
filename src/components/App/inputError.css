@@ -1,0 +1,18 @@
+.input-error {
+    width: 80%;
+    color: #ff4a49;
+    font-size: 1vw;
+    line-height: 1.3vw;
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    margin-top: 0.5vh;
+}
+@media only screen and (max-width: 600px) {
+
+    .input-error {
+        width: 100%;
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+
+}

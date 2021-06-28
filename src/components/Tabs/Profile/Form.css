@@ -1,0 +1,359 @@
+.purchase-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translate( -50%, -50% );
+    border: 0;
+    background-color: #ffffff;
+    
+    border-radius: 5px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+}
+
+.purchase-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba( 0, 0, 0, 0.5 );
+    z-index: 50;
+}
+
+.purchase-modal-overlay {
+    opacity: 0;
+    transition: opacity 100ms ease-in-out;
+}
+
+.purchase-modal-overlay-after-open {
+    opacity: 1;
+}
+
+.purchase-modal-overlay-before-close {
+    opacity: 0;
+}
+
+.purchase-modal #close-bar {
+    width: 99.99%;
+    box-sizing: border-box;
+
+    padding: 1vh 3vw;
+
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.purchase-modal #step-bar {
+    width: 99.99%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-sizing: border-box;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    background-color: #FBFBFB;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.purchase-modal #step-bar div {
+    width: 30%;
+    height: 100%;
+    box-sizing: border-box;
+
+    padding: 1vh 0;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.purchase-modal #step-bar div h3 {
+    text-align: center;
+
+    color: #3E4756;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+
+    cursor: pointer;
+
+    transition: color 100ms;
+}
+
+.purchase-modal #step-bar div span {
+    display: block;
+    width: 1.1rem;
+    height: 1.1rem;
+    line-height: 1.1rem;
+
+    color: #3E4756;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.1rem;
+    padding: 0.2vw;
+
+    margin-right: 0.5vw;
+    
+    border: 1px solid #3E4756;
+    border-radius: 100%;
+    
+    transition: all 100ms;
+    flex-shrink: 0;
+    /* flex-grow: 0; */
+}
+
+.purchase-modal #step-bar #active-step h3 {
+    color: #068CDD;
+}
+
+.purchase-modal #step-bar #active-step span {
+    color: #ffffff;
+    background-color: #068CDD;
+    border-color: #068CDD;
+    box-shadow: 0 0 8px rgba(6, 140, 221, 0.2);
+}
+
+#form-error {
+    color: #ff4a49;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1rem;
+    line-height: normal;
+
+    text-align: center;
+    margin-bottom: 0.5vh;
+}
+
+#payment-form {
+    min-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 2vh;
+    min-width: 500px;
+
+    padding: 1vh 1vw;
+    box-sizing: border-box;
+}
+
+#address-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#confirm-form {
+    width: 100%;
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    padding: 1vh 1vw;
+}
+
+#card-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 2vw;
+}
+
+#payment-form #row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#payment-form #row > .full-input-container {
+    width: 48%;
+}
+
+.purchase-modal input[type="submit"] {
+    width: 100%;
+
+    margin-top: 1vh;
+    padding: 1vh 0;
+
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1vw;
+    line-height: normal;
+
+    background-color: #068CDD;
+    border-radius: 5px;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    border: 1px solid #068CDD;
+}
+
+#confirm-form h1 {
+    color: #0B323C;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.1vw;
+    line-height: normal;
+
+    margin-bottom: 1vh;
+}
+
+#confirm-form h2 {
+    color: #808080;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 0.9vw;
+    line-height: normal;
+
+    margin-bottom: 1vh;
+}
+
+#confirm-form #product {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 1vh 1vw;
+
+    border-radius: 5px;
+    box-shadow: 0 0 4px #068CDD;
+
+    margin: 0.5vh 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+#confirm-form #product h3 {
+    color: #0B323C;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1vw;
+    line-height: normal;
+}
+
+@media only screen and (max-width: 1300px) {
+    #payment-form {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    #modal-wrapper {
+        width: 100vw;
+        box-sizing: border-box;
+        height: 100vh;
+        overflow-y: scroll;
+    }
+
+    .purchase-modal {
+        top: 0;
+        left: 0;
+        right: 0;
+        transform: none;
+
+        border-radius: 0;
+
+    }
+
+    .purchase-modal #close-bar {
+        display: flex;
+    }
+
+    .purchase-modal #step-bar {
+        padding-left: 3vw;
+    }
+    
+    .purchase-modal #step-bar div {
+        padding: 2vh 0;
+    }
+    
+    .purchase-modal #step-bar div h3 {
+        text-align: center;
+    
+        color: #3E4756;
+        font-family: 'Raleway', sans-serif;
+        font-size: 4vw;
+    
+        cursor: pointer;
+    
+        transition: color 100ms;
+    }
+    
+    .purchase-modal #step-bar div span {
+        width: 2vw;
+        height: 2vw;
+        line-height: 2vw;
+        
+        font-size: 4vw;
+        padding: 3vw;
+    
+        margin-right: 2vw;
+    }
+
+    #card-form {
+        margin-top: 5vw;
+    }
+
+    #payment-form {
+        min-width: 0;
+        padding: 1vh 3vw;
+    }
+
+    #confirm-form {
+        min-width: 0;
+        padding: 1vh 3vw;
+    }
+
+    #confirm-form h1 {
+        font-size: 5vw;
+    }
+    
+    #confirm-form h2 {
+        font-size: 4vw;
+    }
+
+    #confirm-form #product {
+        padding: 1vh 3vw;
+    
+        margin: 1vh 0;
+    }
+    
+    #confirm-form #product h3 {
+        font-size: 5vw;
+    }
+
+    .purchase-modal input[type="submit"] {
+        font-size: 5vw;
+    }
+
+}

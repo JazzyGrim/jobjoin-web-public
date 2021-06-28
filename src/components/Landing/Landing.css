@@ -1,0 +1,466 @@
+#landing-main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#landing-main #mobile-dropdown {
+    display: none;
+}
+
+#landing-main nav {
+    width: 80%;
+    padding: 1% 0 1% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    z-index: 10;
+}
+
+#landing-main nav h1 {
+    color: #005B95;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 2vw;
+}
+
+#landing-main nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#landing-main nav ul li {
+    width: 100%;
+    padding: 0 10% 0 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#landing-main nav ul li p {
+    color: #9199AE;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+
+#landing-main nav ul #box {
+    padding: 2% 4%;
+
+    border: 1px solid #9199AE;
+    border-radius: 8px;
+    box-sizing: border-box;
+    
+    cursor: pointer;
+}
+
+#landing-main #mobile-button {
+    display: none;
+
+    color: #0B323C;
+    font-family: 'Raleway', sans-serif;
+    font-size: 5vw;
+
+    padding: 2% 4%;
+
+    border: 1px solid #0B323C;
+    border-radius: 50px;
+    box-sizing: border-box;
+    
+    cursor: pointer;
+}
+
+#landing-main main {
+    width: 80%;
+    margin: auto 0;
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+#landing-main #content {
+    height: fit-content;
+    box-sizing: border-box;
+}
+
+#landing-main #content h1 {
+    color: #068CDD;
+    font-size: 4vw;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+}
+
+#landing-main #content h3 {
+    color: #808080;
+    font-size: 2vw;
+    line-height: 2.3vw;
+    font-family: 'Raleway', sans-serif;
+
+    margin-top: 5%;
+}
+
+#landing-main #content h4 {
+    color: #808080;
+    font-size: 1.7vw;
+    line-height: 2vw;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+
+    margin-top: 5%;
+}
+
+#landing-main #content #main-button-box {
+    display: inline-block;
+    padding: 1vh 1vw;
+
+    border: 2px solid #068CDD;
+    border-radius: 8px;
+    box-sizing: border-box;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    color: #068CDD;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2vw;
+    font-weight: 500;
+    min-width: 0;
+
+    margin-top: 2%;
+}
+
+#landing-main #content img {
+    height: 4vw;
+    margin-top: 2%;
+    margin-right: 2%;
+}
+
+#landing-main #landing-image {
+    height: auto;
+    width: 50%;
+    margin-left: auto;
+}
+
+/* Second Part of the page */
+
+#landing-user {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F8F8;
+}
+
+#landing-user #image-container {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#landing-user img {
+    width: 70%;
+    margin-right: 10%;
+    height: auto;
+}
+
+#landing-user #content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#landing-user #content h4 {
+    color: #808080;
+
+    font-size: 1.3vw;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    
+    margin-bottom: 2%;
+}
+
+#landing-user #content h3 {
+    color: #3E4756;
+
+    font-size: 1.2vw;
+    line-height: 2vw;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+
+    margin-bottom: 8%;
+}
+
+#landing-user #content h2 {
+    color: #0B323C;
+
+    font-size: 2vw;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+
+    margin: 2% 0;
+}
+
+#landing-user #content h3:last-child {
+    margin-bottom: 0%;
+}
+
+/* Third Part of the page */
+
+#landing-recruiter {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+#landing-recruiter #image-container {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#landing-recruiter img {
+    width: 70%;
+    margin-left: 10%;
+    height: auto;
+}
+
+#landing-recruiter #content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#landing-recruiter #content h4 {
+    color: #808080;
+
+    font-size: 1.3vw;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    
+    margin-bottom: 2%;
+}
+
+#landing-recruiter #content h3 {
+    color: #3E4756;
+
+    font-size: 1.2vw;
+    line-height: 2vw;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+
+    margin-bottom: 8%;
+}
+
+#landing-recruiter #content h2 {
+    color: #0B323C;
+
+    font-size: 2vw;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+
+    margin: 2% 0;
+}
+
+#landing-recruiter #content h3:last-child {
+    margin-bottom: 0%;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #landing-main nav {
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 80%;
+        padding-top: 6%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff;
+        z-index: 10;
+    }
+    
+    #landing-main nav h1 {
+        color: #005B95;
+        font-size: 6vw;
+    }
+    
+    #landing-main nav ul {
+        display: none;
+    }
+
+    #landing-main #mobile-button {
+        display: initial;
+    }
+
+    #landing-main {
+        height: fit-content;
+    }
+
+    #landing-main main {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    #landing-main #content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #landing-main #content h1 {
+        font-size: 8vw;
+        text-align: center;
+        margin-top: 2vh;
+    }
+    
+    #landing-main #content h3 {
+        font-size: 4vw;
+        line-height: 5vw;
+        text-align: center;
+    
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    #landing-main #content h4 {
+        font-size: 5vw;
+        text-align: center;
+        line-height: 5vw;
+
+        margin-top: 7%;
+    }
+    
+    #landing-main #content #main-button-box {
+        padding: 1vh 4vw;
+    
+        font-size: 5vw;
+    
+        margin-top: 3%;
+        margin-bottom: 5%;
+    }
+
+    #landing-main #content img {
+        width: 50%;
+        height: auto;
+        margin-top: 2%;
+        margin-right: 0;
+        padding: 0 25%;
+    }
+    
+    #landing-main #landing-image {
+        height: auto;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    /* Second part of the page */
+
+    #landing-user {
+        flex-direction: column-reverse;
+    }
+    
+    #landing-user #image-container {
+        width: 80%;
+        height: fit-content;
+        margin-top: 15%;
+
+    }
+    
+    #landing-user img {
+        width: 80%;
+        margin-right: 0;
+        height: auto;
+    }
+    
+    #landing-user #content {
+        width: 80%;
+        text-align: center;
+    }
+    
+    #landing-user #content h4 {
+        width: 100%;
+        font-size: 3vw;
+    }
+    
+    #landing-user #content h3 {
+        width: 100%;
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+    
+    #landing-user #content h2 {
+        width: 100%;
+    
+        font-size: 6vw;
+    }
+    
+    #landing-user #content h3:last-child {
+        margin-bottom: 0%;
+    }
+
+    /* Third part of the page */
+
+    #landing-recruiter {
+        flex-direction: column;
+    }
+    
+    #landing-recruiter #image-container {
+        width: 80%;
+        height: fit-content;
+        margin-top: 15%;
+
+    }
+    
+    #landing-recruiter img {
+        width: 80%;
+        margin-left: 0;
+        height: auto;
+    }
+    
+    #landing-recruiter #content {
+        width: 80%;
+        text-align: center;
+    }
+    
+    #landing-recruiter #content h4 {
+        width: 100%;
+        font-size: 3vw;
+    }
+    
+    #landing-recruiter #content h3 {
+        width: 100%;
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+    
+    #landing-recruiter #content h2 {
+        width: 100%;
+    
+        font-size: 6vw;
+    }
+    
+    #landing-recruiter #content h3:last-child {
+        margin-bottom: 0%;
+    }
+
+}

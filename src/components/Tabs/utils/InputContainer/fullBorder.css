@@ -1,0 +1,61 @@
+.full-input-container {
+    width: 100%;
+
+    position: relative;
+
+    margin: 0.5vh 0;
+}
+
+.full-input-container label {
+    color: #808080;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 0.9rem;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.full-input-container input, .full-input-container select {
+    width: 100%;
+
+    margin-top: 0.2vh;
+
+    outline: 0;
+    border: 0;
+
+    color: #3E4756;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1rem;
+    line-height: normal;
+
+    box-sizing: border-box;
+    padding: 0.5vh 0.5vw;
+    border: 1px solid #E4E4E4;
+    border-radius: 5px;
+
+    transition: border 200ms;
+}
+
+.full-input-container input:focus, .full-input-container select:focus {
+    border-color: #068CDD;
+    box-shadow: 0 0 8px rgba(6, 140, 221, 0.2);
+}
+
+.full-input-container input::placeholder, .full-input-container select::placeholder{
+    color: #B3B3B3;
+}
+
+@media only screen and (max-width: 600px) {
+    .full-input-container {
+        margin: 3vw 0;
+    }
+    
+    .full-input-container label {
+        font-size: 4vw;
+    }
+    
+    .full-input-container input, .full-input-container input {
+        margin-top: 0.5vh;
+        font-size: 4vw;
+        padding: 0.5vh 3vw;
+    }
+}

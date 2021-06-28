@@ -1,0 +1,60 @@
+#purchase-success-section {
+    width: 80%;
+    padding: 5vh 10% 0 10%;
+    min-height: 85vh;
+    background-color: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#purchase-success-section #purchase-success {
+    width: 25%;
+    height: fit-content;
+
+    margin: 5vh 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 5px;
+
+    background-color: #ffffff;
+    box-shadow: 0 1px 10px rgba( 0, 0, 0, 0.23 );
+
+    position: relative;
+}
+
+
+#purchase-success-section #purchase-success #header {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1vh 0;
+
+    background-color: #068CDD;
+    color: #ffffff;
+    text-align: center;
+
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.3vw;
+    line-height: normal;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#purchase-success-section #purchase-success h3 {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1vh 5%;
+
+    color: #3E4756;
+    text-align: center;
+
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.1vw;
+    line-height: 1.3vw;
+}

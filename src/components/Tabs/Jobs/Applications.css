@@ -1,0 +1,216 @@
+#applications-section {
+    width: 80%;
+    padding: 5vh 10% 0 10%;
+    min-height: 85vh;
+    background-color: #F8F8F8;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#applications-section #sidebar {
+    width: 25%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#applications-section #sidebar a {
+    background-color: #068CDD;
+    border-radius: 5px;
+
+    padding: 0.7vh 1.3vw;
+
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1vw;
+    line-height: normal;
+}
+
+#applications-section #sidebar #sidebar-title {
+    color: #0B323C;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 600;
+
+    margin: 2vh 0 1vh 0;
+}
+
+#applications-section #sidebar .sidebar-icon {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+#applications-section #sidebar .sidebar-icon h3 {
+    color: #969694;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.2vw;
+    line-height: normal;
+}
+
+#applications-section #sidebar #sidebar-menu {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    margin-top: 15%;
+}
+
+#applications-section #sidebar #sidebar-menu .sidebar-menu-item {
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+
+    padding: 1.2vh 1vw;
+    margin: 0.4vh 0;
+
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 1px 10px rgba( 0, 0, 0, 0.23 );
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#applications-section #sidebar #sidebar-menu .sidebar-menu-item h3 {
+    color: #0B323C;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+#applications-section #sidebar #sidebar-menu .sidebar-menu-item h4 {
+    color: #0B323C;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+#applications-section #sidebar #sidebar-menu #active-applications h4 {
+    color: #068CDD;
+}
+
+#applications-section #sidebar #sidebar-menu #shortlisted-applications h4 {
+    color: #34C191;
+}
+
+#applications-section #sidebar #sidebar-menu #denied-applications h4 {
+    color: #F95F62;
+}
+
+#applications-section #sidebar #sidebar-menu #expired-applications h4 {
+    color: #BEC3CF;
+}
+
+#applications-section #sidebar #sidebar-menu .active {
+    background-color: #068CDD;
+}
+
+#applications-section #sidebar #sidebar-menu .active h3 {
+    color: #ffffff;
+}
+
+#applications-section #sidebar #sidebar-menu .active h4 {
+    color: #ffffff !important;
+}
+
+#applications-section #user-container {
+    width: 73%;
+    height: 100%;
+
+    box-sizing: border-box;
+
+    margin-left: 2%;
+
+    display: grid;
+    grid-template-columns: repeat( 3, minmax( 0, 1fr ) );
+    column-gap: 1%;
+    row-gap: 1vh;
+}
+
+#applications-section #user-container #user-loader {
+    margin: auto;
+
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate3d( -50%, -50%, 0 );
+
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #applications-section {
+        width: 80%;
+        padding: 5vh 10% 0 10%;
+        min-height: 85vh;
+
+        flex-direction: column;
+    }
+    
+    #applications-section #sidebar {
+        width: 100%;
+    }
+    
+    #applications-section #sidebar a {
+        padding: 0.7vh 2vw;
+    
+        font-size: 4vw;
+    }
+    
+    #applications-section #sidebar #sidebar-title {
+        font-size: 5vw;
+    
+        margin: 2vh 0 1vh 0;
+    }
+    
+    #applications-section #sidebar .sidebar-icon h3 {
+        font-size: 3.5vw;
+    }
+    
+    #applications-section #sidebar #sidebar-menu {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    
+    #applications-section #sidebar #sidebar-menu .sidebar-menu-item {
+        width: 100%;
+    
+        padding: 1.5vh 3vw;
+    }
+    
+    #applications-section #sidebar #sidebar-menu .sidebar-menu-item h3 {
+        font-size: 3.5vw;
+    }
+    
+    #applications-section #sidebar #sidebar-menu .sidebar-menu-item h4 {
+        font-size: 3.5vw;
+    }
+    
+    #applications-section #user-container {
+        width: 100%;
+    
+        margin-left: 0;
+        grid-template-columns: minmax( 0, 1fr );
+        column-gap: 0;
+    }
+
+    #applications-section #user-container #user-loader {
+        top: 96%;
+    }
+
+}

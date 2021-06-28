@@ -1,0 +1,155 @@
+#credits-section {
+    width: 80%;
+    padding: 5vh 10% 0 10%;
+    min-height: 85vh;
+    background-color: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#credits-section #credits {
+    min-width: 25%;
+    height: fit-content;
+    box-sizing: border-box;
+
+    padding: 2vh 1vw;
+    margin: 5vh 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 5px;
+
+    background-color: #ffffff;
+    box-shadow: 0 1px 10px rgba( 0, 0, 0, 0.23 );
+
+    position: relative;
+
+    overflow-x: hidden;
+}
+
+#credits-section #credits #product-select {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#credits-section .option {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 1vh 1vw;
+
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgba( 0, 0, 0, 0.23 );
+
+    margin: 0.5vh 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: all 200ms ease-in-out;
+}
+
+#credits-section #active {
+    background-color: #068CDD;
+}
+
+#credits-section #active > h3, #credits-section #active > h4 {
+    color: #ffffff;
+}
+
+#credits-section .option h3 {
+    color: #0B323C;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1vw;
+    line-height: normal;
+
+    transition: all 200ms ease-in-out;
+}
+
+#credits-section .option h4 {
+    color: #0B323C;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1vw;
+    line-height: normal;
+
+    transition: all 200ms ease-in-out;
+}
+
+#credits-section #credits #title {
+    color: #0B323C;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3vw;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#credits-section #credits #subtitle {
+    width: 100%;
+    color: #3E4756;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1vw;
+    line-height: normal;
+
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+
+@media only screen and (max-width: 1300px) {
+    #credits-section #credits {
+        flex-direction: column;
+    }
+
+    #credits-section #credits #product-select {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    #credits-section {
+        width: 90%;
+        min-height: 90vh;
+        padding: 0 5% 0 5%;
+    }
+    
+    #credits-section #credits {
+        width: 100%;
+        padding: 3vh 3vw;
+    }
+
+    #credits-section #credits #title {
+        font-size: 5vw;
+    }
+    
+    #credits-section #credits #subtitle {
+        font-size: 4vw;
+    }
+
+    #credits-section #credits #product-select {
+        margin-bottom: 2vh;
+    }
+    
+    #credits-section .option {
+        padding: 1vh 3vw;
+    }
+
+    #credits-section .option h3 {
+        font-size: 4vw;
+    }
+    
+    #credits-section .option h4 {
+        font-size: 4vw;
+    }
+
+}
